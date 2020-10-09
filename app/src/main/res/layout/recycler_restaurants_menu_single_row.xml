@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/resMenuCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_marginEnd="40dp"
+            android:visibility="visible"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp"
+            app:cardUseCompatPadding="true"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/txtSrNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:text="@string/txt_sr_no"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <View
+                    android:id="@+id/viewVertical"
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/txtSrNo"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/txtFoodName"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_toEndOf="@id/txtSrNo"
+                    android:text="@string/txt_food_name"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textColor="@color/darkBlue"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/txtFoodPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtFoodName"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/txtSrNo"
+                    android:text="@string/txt_food_price"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnAddFood"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_rounded_blue"
+        android:text="@string/btn_txt_add"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnRemoveFood"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_rounded_yellow"
+        android:text="@string/btn_txt_remove"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</RelativeLayout>

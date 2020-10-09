@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:minHeight="190dp">
+
+    <ImageView
+        android:id="@+id/imgUserProfile"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/user_profile" />
+
+    <TextView
+        android:id="@+id/txtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgUserProfile"
+        android:layout_marginStart="33dp"
+        android:text="@string/et_hint_username"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtUserPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtUsername"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/txt_mobile_no"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

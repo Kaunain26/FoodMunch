@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtResHistResName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/txt_res_name"
+        android:textColor="@color/darkBlue"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:text="@string/txt_date"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtResHistResName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="6dp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/childOrderHistRecyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:scrollIndicators="right"
+            android:scrollbars="vertical"
+            tools:listitem="@layout/order_history_child_custom_view"
+            tools:targetApi="m" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <ImageView
+        android:id="@+id/imgFoodMunchLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_food_munch_logo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="25dp">
+
+                <TextView
+                    android:id="@+id/txtLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_login"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etMobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtLogin"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/curved_white_background"
+                    android:drawableStart="@drawable/ic_phone"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/et_hint_mobile_no"
+                    android:inputType="number"
+                    android:padding="15dp" />
+
+                <EditText
+                    android:id="@+id/etNewPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etMobileNumber"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/curved_white_background"
+                    android:drawableStart="@drawable/ic_password"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/et_hint_password"
+                    android:inputType="numberPassword"
+                    android:padding="15dp" />
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etNewPassword"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_rounded_blue"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="@string/btn_txt_login"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etNewPassword"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:padding="5dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txtForgotPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etNewPassword"
+                    android:layout_marginTop="80dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:padding="5dp"
+                    android:text="@string/forgot_password"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="5dp"
+        android:text="@string/txt_sign_up"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:textStyle="normal" />
+
+</RelativeLayout>

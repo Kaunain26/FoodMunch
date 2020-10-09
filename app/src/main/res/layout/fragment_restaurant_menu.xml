@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.RestaurantMenuFragment">
+
+    <TextView
+        android:id="@+id/txtInstruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:includeFontPadding="false"
+        android:text="@string/txt_res_menu_instruction"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/txtInstruction"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/darker_gray" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/resDetailsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnProceedToCart"
+        android:layout_below="@id/view"
+        android:scrollIndicators="right"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/recycler_restaurants_menu_single_row"
+        tools:targetApi="m" />
+
+    <RelativeLayout
+        android:id="@+id/rlLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view"
+        android:background="@drawable/white_background"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnProceedToCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/darkBlue"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/btn_txt_proceed_to_cart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

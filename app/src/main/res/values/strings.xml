@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Food Munch</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="txt_login">L o g I n</string>
+    <string name="et_hint_mobile_no">Mobile Number</string>
+    <string name="et_hint_password">Password</string>
+    <string name="btn_txt_login">L o g i n</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="txt_sign_up">Don\'t have an account? Sign up now</string>
+    <string name="txt_ordering_from">Ordering From :</string>
+    <string name="txt_res_name">Restaurant Name</string>
+    <string name="btn_txt_place_order">Place Order</string>
+    <string name="txt_forgot_pass_instruction">Enter your registered mobile number and email below:</string>
+    <string name="txt_forgot_password">F o r g o t P a s s w o r d</string>
+    <string name="et_hint_email_address">Email Address</string>
+    <string name="btn_txt_next">Next</string>
+    <string name="txt_code">CO\nDE</string>
+    <string name="txt_verification">Verification</string>
+    <string name="txt_otp_instruction">Enter OTP below sent on your Email.</string>
+    <string name="et_hint_otp">OTP</string>
+    <string name="et_hint_new_password">New Password</string>
+    <string name="et_hint_confirm_password">Confirm Password</string>
+    <string name="btn_txt_verify">V e r i f y</string>
+    <string name="txt_header_register">R E G I S T E R</string>
+    <string name="txt_register_instruction">Don\'t have an account? Create your account, it takes less than a minute</string>
+    <string name="et_hint_username">Username</string>
+    <string name="et_hint_address">Delivery Address</string>
+    <string name="btn_txt_register">Register</string>
+    <string name="txt_no_fav_restaurants">No Favourites Restaurants Added</string>
+    <string name="order_placed_note">Your order has been successfully\nplaced!</string>
+    <string name="txt_order_hist_header">Your previous orders are listed below:</string>
+    <string name="txt_no_oder_placed">You haven\'t placed any orders yet</string>
+    <string name="txt_res_menu_instruction">Choose from menu listed below:</string>
+    <string name="btn_txt_proceed_to_cart">Proceed to Cart</string>
+    <string name="txt_mobile_no">+91–8631459627</string>
+    <string name="btn_txt_ok">O K</string>
+    <string name="txt_food_name">Mirchi Tadka</string>
+    <string name="txt_food_price">Rs.50</string>
+    <string name="txt_date">4/10/20</string>
+    <string name="txt_cost_for_one">300/person</string>
+    <string name="txt__res_rating">4.7</string>
+    <string name="btn_txt_add">A D D</string>
+    <string name="btn_txt_remove">R E M O V E</string>
+    <string name="txt_sr_no">1.</string>
+
+
+    <!--FAQs Answers-->
+    <string name="faq_ans_1">A.1 As of now, orders can only be placed through the FoodMunch app. Start by downloading the app for Android. Create an account and choose your items.</string>
+    <string name="faq_ans_2">A.2 Paper coupons are not accepted. FoodMuch automatically applies all eligible coupons to your order so that you can rest assured that you are getting the lowest prices possible for the items you purchase.</string>
+    <string name="faq_ans_3">A.3 Sorry, we don’t accept orders on call. However you can call us on +91–8507618036 for any help related to placing order.</string>
+    <string name="faq_ans_4">A.4 We will send you a order confirmation email once we receive your order.</string>
+    <string name="faq_ans_5">A.5 Orders are delivered directly by the FoodMunch Packaging Assist suppliers. Different items in an order could be fulfilled by different suppliers. We will share the contact details and amount payable for all deliveries via email and SMS.</string>
+    <string name="faq_ans_6">A.6 Yes. There are no delivery or handling charges.</string>
+    <string name="faq_ans_7">A.7 You can pay at the time of placing order or you can choose the “PAY LATER” option.</string>
+    <string name="faq_ans_8">A.8 You can pay by cash at the time of delivery. We will soon be introducing more payment methods.</string>
+    <string name="faq_ans_9">A.9. Yes. You will get your invoice from our supplier at the time of delivery.</string>
+    <string name="faq_ans_10">A.10. Please refer to our return and cancellation policy.</string>
+
+    <!--FAQs Questions-->
+    <string name="faq_que_1">Q.1 How do I place an order?</string>
+    <string name="faq_que_2">Q.2 Does FoodMunch accept coupons?</string>
+    <string name="faq_que_3">Q.3 Can I place order on call?</string>
+    <string name="faq_que_4">Q.4 How do I know my order is confirmed?</string>
+    <string name="faq_que_5">Q.5 How will be my orders delivered?</string>
+    <string name="faq_que_6">Q.6 Is delivery free?</string>
+    <string name="faq_que_7">Q.7 When I have to pay?</string>
+    <string name="faq_que_8">Q.8 What payment modes are accepted?</string>
+    <string name="faq_que_9">Q.9. Will I get an invoice?</string>
+    <string name="faq_que_10">Q.10 How do I cancel my order?</string>
+    <string name="dialog_title">OTP has been sent to your email.Please refer your email</string>
+    <string name="dialog_otp_note">Note: If you didn\'t get OTP , please refer your previous email for OTP</string>
+    <string name="sorting">Sorting</string>
+    <string name="home">Home</string>
+    <string name="my_profile">My Profile</string>
+    <string name="favourites_restaurants">Favourites Restaurants</string>
+    <string name="order_history">Order History</string>
+    <string name="faqs">FAQs</string>
+    <string name="log_out">Log out</string>
+
+</resources>
